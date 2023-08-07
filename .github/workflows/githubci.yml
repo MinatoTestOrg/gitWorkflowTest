@@ -33,3 +33,6 @@ jobs:
 
     - name: Changing the work directory to / ...
       run: cd /; ls -l
+
+    - name: Reusing the workflow...
+      uses: ./.github/workflows/test.yml
