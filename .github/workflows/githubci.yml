@@ -8,5 +8,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "Hello, friend. Hello, friend?"
-  
+    - name: Echo message
+      run: echo "Hello, friend. Hello, friend?"
+
+  second-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checking out the repository...
+      uses: actions/checkout@v2
+
+    - name: Displaying the contents....
+      run: pwd; ls -l; uname -a; whoami
+
+    - name: Displaying ip configurations...
+      run: ifconfig
+
+  thirds-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Displaying current directory...
+      run: pwd; ls -l
+
+    - name: Changing the work directory to / ...
+      run: cd /; ls -l
+
+    
