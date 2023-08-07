@@ -1,0 +1,22 @@
+name: "Second custom action"
+description: "My second custom action trail"
+
+inputs:
+  codeql-path:
+    description: Path to the CodeQL CLI executable
+    required: true
+
+  runs:
+    using: "composite"
+    steps:
+      - name: "Displaying OS config..."
+        shell: bash
+        runs: uname -a
+
+      - name: "Displaying the ip config..."
+        shell: bash
+        runs: ifconfig
+
+      - name: "Displaying the input content..."
+        shell: bash
+        runs: echo ${{ input.codeql-path }}
