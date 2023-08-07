@@ -21,7 +21,7 @@ jobs:
       run: pwd; ls -l; uname -a; whoami
 
     - name: Displaying ip configurations...
-      run: ifconfig
+      run: ifconfig 
 
   thirds-job:
     runs-on: ubuntu-latest 
