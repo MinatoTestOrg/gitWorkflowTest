@@ -28,11 +28,11 @@ jobs:
     needs: second-job
 
     steps:
-    - name: Displaying current directory...
-      run: pwd; ls -l
-
     - name: Checking out the repository...
       uses: actions/checkout@v2
+
+    - name: Displaying current directory...
+      run: pwd; ls -l
 
     - name: Reusing the workflow...
       uses: ./.github/workflows/test
