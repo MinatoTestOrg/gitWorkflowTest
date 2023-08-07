@@ -41,4 +41,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: development
     steps:
-      - uses: ./../actions/action1
+      - name: Checking out the repo...
+        uses: actions/checkout@v3
+
+      - name: Listing the content...
+        run: pwd; ls -l
+        
+      - name: My custom action1 
+        uses: ./../actions/action1
