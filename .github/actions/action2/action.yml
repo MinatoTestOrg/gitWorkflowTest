@@ -19,4 +19,4 @@ inputs:
 
       - name: "Displaying the input content..."
         shell: bash
-        run: echo "Input value: ${{ inputs.codeql-path }}"
+        run: echo "Input value: ${{ github.event.inputs.codeql-path }}"
