@@ -34,5 +34,6 @@ jobs:
     - name: Displaying current directory...
       run: pwd; ls -l
 
-    - name: Reusing the workflow...
+  foruth-job:
       uses: ./.github/workflows/test
+      
