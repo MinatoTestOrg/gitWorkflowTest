@@ -1,10 +1,6 @@
 name: Github Workflow
 
-on:
-  push:
-    branches:
-    - main
-    - development
+on: workflow_dispatch
 
 jobs:
   first-job:
@@ -37,5 +33,3 @@ jobs:
 
     - name: Changing the work directory to / ...
       run: cd /; ls -l
-
-    
