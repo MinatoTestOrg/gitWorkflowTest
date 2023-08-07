@@ -1,0 +1,11 @@
+name: "First custom action"
+description: "My first custom action trail"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Echoing some content..."
+      run: echo "Hello friend. Hello, friend?"
+
+    - name: "Displaying the ip config..."
+      run: ifconfig
