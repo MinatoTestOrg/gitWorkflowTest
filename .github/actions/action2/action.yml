@@ -2,9 +2,8 @@ name: "Second custom action"
 description: "My second custom action trail"
 
 inputs:
-  codeql-path:
+  myinput:
     required: true
-    type: string
 
   runs:
     using: "composite"
@@ -19,4 +18,4 @@ inputs:
 
       - name: "Displaying the input content..."
         shell: bash
-        run: echo "Input value: ${{ github.event.inputs.codeql-path }}"
+        run: echo ${{ inputs.myinput }}
