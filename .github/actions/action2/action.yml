@@ -5,6 +5,7 @@ inputs:
   codeql-path:
     description: Path to the CodeQL CLI executable
     required: true
+    type: string
 
   runs:
     using: "composite"
