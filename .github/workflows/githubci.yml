@@ -36,3 +36,9 @@ jobs:
 
   foruth-job:
     uses: ./.github/workflows/test.yml
+
+  fifth-job:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - uses: ./.github/workflows/test
