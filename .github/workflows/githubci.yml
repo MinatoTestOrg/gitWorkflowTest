@@ -47,5 +47,8 @@ jobs:
       - name: Listing the content...
         run: pwd; ls -l
         
-      - name: My custom action1 
+      - name: My first custom action1 
         uses: ./.github/actions/action1
+
+      - name: My second custom action2
+        uses: ./.github/actions/action2
