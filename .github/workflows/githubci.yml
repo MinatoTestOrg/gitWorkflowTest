@@ -35,5 +35,4 @@ jobs:
       run: pwd; ls -l
 
   foruth-job:
-      uses: ./.github/workflows/test
-      
+    uses: ./.github/workflows/test.yml
