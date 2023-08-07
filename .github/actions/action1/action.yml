@@ -9,4 +9,5 @@ runs:
       run: echo "Hello friend. Hello, friend?"
 
     - name: "Displaying the ip config..."
+      shell: bash
       run: ifconfig
