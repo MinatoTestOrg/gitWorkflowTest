@@ -5,6 +5,7 @@ runs:
   using: "composite"
   steps:
     - name: "Echoing some content..."
+      shell: bash
       run: echo "Hello friend. Hello, friend?"
 
     - name: "Displaying the ip config..."
