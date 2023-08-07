@@ -19,4 +19,4 @@ inputs:
 
       - name: "Displaying the input content..."
         shell: bash
-        runs: echo ${{ input.codeql-path }}
+        runs: echo ${{ inputs.codeql-path }}
