@@ -11,12 +11,12 @@ inputs:
     steps:
       - name: "Displaying OS config..."
         shell: bash
-        runs: uname -a
+        run: uname -a
 
       - name: "Displaying the ip config..."
         shell: bash
-        runs: ifconfig
+        run: ifconfig
 
       - name: "Displaying the input content..."
         shell: bash
-        runs: echo "Content : ${{ inputs.codeql-path }}"
+        run: echo "Input value: ${{ inputs.codeql-path }}"
