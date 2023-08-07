@@ -48,4 +48,4 @@ jobs:
         run: pwd; ls -l
         
       - name: My custom action1 
-        uses: ./../actions/action1
+        uses: ./.github/actions/action1
