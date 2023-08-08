@@ -5,17 +5,17 @@ inputs:
   myinput:
     required: true
 
-  runs:
-    using: "composite"
-    steps:
-      - name: "Displaying OS config..."
-        shell: bash
-        run: uname -a
+runs:
+  using: "composite"
+  steps:
+    - name: "Displaying OS config..."
+      shell: bash
+      run: uname -a
 
-      - name: "Displaying the ip config..."
-        shell: bash
-        run: ifconfig
+    - name: "Displaying the ip config..."
+      shell: bash
+      run: ifconfig
 
-      - name: "Displaying the input content..."
-        shell: bash
-        run: echo "hello"
+    - name: "Displaying the input content..."
+      shell: bash
+      run: echo "hello"
