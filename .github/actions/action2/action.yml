@@ -18,4 +18,4 @@ inputs:
 
       - name: "Displaying the input content..."
         shell: bash
-        run: echo ${{ inputs.myinput }}
+        run: echo ${{inputs.myinput}}
