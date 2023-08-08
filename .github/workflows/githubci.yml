@@ -54,3 +54,4 @@ jobs:
         uses: ./.github/actions/action2
         with:
           myinput: "Minato Namikaze"
+          non-mandatory-input: "Minato"
