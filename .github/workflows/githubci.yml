@@ -53,4 +53,4 @@ jobs:
       - name: My second custom action2
         uses: ./.github/actions/action2
         with:
-          codeql-path: "Astalavista Baby"
+          myinput: checkthis
