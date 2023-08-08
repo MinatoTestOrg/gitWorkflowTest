@@ -18,4 +18,4 @@ inputs:
 
       - name: "Displaying the input content..."
         shell: bash
-        run: echo "::set-env name=INPUT_MYINPUT::${{ inputs.myinput }}"
+        run: echo "hello"
