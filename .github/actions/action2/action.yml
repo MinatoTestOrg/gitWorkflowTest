@@ -3,7 +3,13 @@ description: "My second custom action trail"
 
 inputs:
   myinput:
+    description: "My custom input"
     required: true
+  non-mandatory-input:
+    description: "This is a non mandatory input"
+    default: "Sukumaran"
+    required: false
+    type: string
 
 runs:
   using: "composite"
@@ -18,4 +24,6 @@ runs:
 
     - name: "Displaying the input content..."
       shell: bash
-      run: echo ${{ inputs.myinput }}
+      run: |
+        echo ${{ inputs.myinput }}
+        echo ${{ inputs.non-mandatory-input }}
