@@ -1,0 +1,14 @@
+name: Org level secret access
+
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Printing the latest commit SHA...
+      run: echo ${GIHUB_SHA}
+
+    - name: Printing org level variable...
+      run: echo ${{vars.ORG_VARIABLE1}}
